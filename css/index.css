@@ -1,0 +1,224 @@
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  scroll-margin-top: 82px;
+  overflow: clip;
+}
+
+@media (max-width: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 63px;
+  }
+}
+/*--------------------------------------------------------------
+# Global Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  padding: 40px 0;
+}
+
+.hero .hero-content {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  .hero .hero-content {
+    margin-bottom: 0;
+  }
+}
+.hero .hero-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.hero .hero-tag i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+.hero .hero-tag span {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero h1 .highlight {
+  color: var(--accent-color);
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+}
+.hero .lead {
+  color: color-mix(in srgb, var(--bs-dark), transparent 25%);
+  margin-bottom: 1.5rem;
+}
+
+.hero .hero-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.hero .hero-features li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: var(--bs-dark);
+}
+
+.hero .hero-features li i {
+  color: var(--accent-color);
+  margin-right: 0.5rem;
+}
+
+.hero .hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero .hero-cta .btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(-bs-secondary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .hero-cta .btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), black 10%);
+  border-color: color-mix(in srgb, var(--accent-color), black 10%);
+}
+
+.hero .hero-cta .btn-link {
+  color: var(--heading-color);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero .hero-cta .btn-link i {
+  margin-right: 0.5rem;
+}
+
+.hero .hero-cta .btn-link:hover {
+  color: var(--accent-color);
+}
+
+.hero .hero-image-wrapper {
+  position: relative;
+  padding: 0 40px;
+}
+
+.hero .hero-image-wrapper .hero-image {
+  border-radius: 10px;
+}
+
+.hero .hero-image-wrapper .stat-card {
+  position: absolute;
+  background-color: var(--surface-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 150px;
+}
+
+.hero .hero-image-wrapper .stat-card.top-right {
+  top: 40px;
+  right: 0px;
+}
+
+.hero .hero-image-wrapper .stat-card.bottom-left {
+  bottom: 40px;
+  left: 0px;
+}
+
+.hero .hero-image-wrapper .stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--defaut-color);
+  margin-bottom: 0.25rem;
+}
+
+.hero .hero-image-wrapper .stat-card .stat-label {
+  font-size: 0.875rem;
+  color: var(--bs-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.hero .hero-image-wrapper .stat-card .stat-icon {
+  align-self: flex-end;
+  font-size: 1.25rem;
+  color: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+@media (max-width: 575px) {
+  .hero .hero-image-wrapper {
+    padding: 0;
+  }
+  .hero .hero-image-wrapper .stat-card {
+    position: relative;
+  }
+  .hero .hero-image-wrapper .stat-card.top-right,
+  .hero .hero-image-wrapper .stat-card.bottom-left {
+    inset: auto;
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,67 @@
+/*--------------------------------------------------------------
+# Image Video
+--------------------------------------------------------------*/
+.video .content .who-we-are {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.video .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.video .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.video .content ul li {
+  padding-bottom: 10px;
+}
+
+.video .content ul i {
+  font-size: 1.25rem;
+  margin-right: 4px;
+  color: var(--accent-color);
+}
+
+.video .content p:last-child {
+  margin-bottom: 0;
+}
+
+.video .content .read-more {
+  background: var(--accent-color);
+  color: var(--bs-secondary);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.video .content .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  padding-right: 19px;
+}
+
+.video .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+.video .about-images img {
+  border-radius: 10px;
+}

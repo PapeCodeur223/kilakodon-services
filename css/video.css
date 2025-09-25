@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.video .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.video .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.video .content ul i {
+  flex-shrink: 0;
+  font-size: 20px;
+  color: var(--accent-color);
+  margin-right: 20px;
+  line-height: 0;
+}
+
+.video .content ul h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.video .content ul p {
+  font-size: 15px;
+}
+
+.video .content p:last-child {
+  margin-bottom: 0;
+}
+
+.video .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}

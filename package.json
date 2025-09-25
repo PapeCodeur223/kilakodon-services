@@ -1,0 +1,21 @@
+{
+  "name": "kilakodon-service",
+  "version": "1.0.0",
+  "description": "Un site Vitrine de Base pour Kilakodon Service",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "keywords": [
+    "Vitrine",
+    "Professionnel"
+  ],
+  "author": "Pape Soumaila Traoré",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "bootstrap": "^5.3.8",
+    "sass": "^1.92.1"
+  }
+}
