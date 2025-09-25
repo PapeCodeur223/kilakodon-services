@@ -27,3 +27,6 @@ Ce guide contient les **procédures Git** et les étapes pour **utiliser le site
 4. Lancer le serveur de developpement en cliquant droit sur index.html :
    Open with Five Server
    Pour lancer le fichier dans le navigateur.
+
+5. Pour chaque modification et chaque pousser utilise la commande :
+   git push origin master:main
