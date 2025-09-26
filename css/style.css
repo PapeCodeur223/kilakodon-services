@@ -227,7 +227,6 @@ h6 {
   }
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
     font-size: 15px;
     padding: 0 2px;
     font-family: var(--nav-font);
@@ -328,6 +327,9 @@ h6 {
     cursor: pointer;
     transition: color 0.3s;
   }
+  h1.sitename {
+    display: none !important;
+  }
   .navmenu {
     padding: 0;
     z-index: 9997;
@@ -340,7 +342,7 @@ h6 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--bs-secondary);
+    background-color: color-mix(in srgb, var(--bs-light), transparent 20%);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -349,7 +351,7 @@ h6 {
   }
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-dropdown-color);
+    color: var(--bs-primary) !important;
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 16px;
@@ -382,7 +384,7 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: var(--bs-secondary) !important;
   }
   .navmenu .active i,
   .navmenu .active:focus i {
